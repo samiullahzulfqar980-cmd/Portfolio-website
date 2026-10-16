@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Samiullah | Web &amp; Mobile App Developer Portfolio</title>
+  <meta name="title" content="Samiullah | Web &amp; Mobile App Developer Portfolio">
+  <meta name="description" content="Portfolio of Samiullah - Full-Stack Web and Cross-Platform Mobile App Developer specializing in React, Next.js, Flutter, React Native, and Node.js.">
+  <meta name="keywords" content="Samiullah, Samiullah Zulfqar, Web Developer, Mobile App Developer, Flutter Developer, React Developer, Full Stack Developer, Islamabad, Pakistan">
+  <meta name="author" content="Samiullah">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/samiullahzulfqar980-cmd">
+  <meta property="og:title" content="Samiullah | Web &amp; Mobile App Developer">
+  <meta property="og:description" content="Building scalable web applications and high-performance cross-platform mobile apps for iOS and Android.">
+  <meta property="og:image" content="assets/images/samiullah-avatar.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50' y='65' font-size='50' font-family='sans-serif' font-weight='bold' fill='%23ffffff' text-anchor='middle'>SZ</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Ambient Glowing Background Blobs -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Interactive Particle Mesh Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ========================================================================
+       1. Navigation Bar
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Samiullah Homepage">
+        <div class="logo-badge">&lt;SZ/&gt;</div>
+        <div class="logo-text">Samiullah<span>.dev</span></div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons: Sound, Theme Toggle, Resume & Contact CTA -->
+      <div class="nav-actions">
+        <!-- Sound Effect Toggle -->
+        <button id="sound-toggle-btn" class="action-icon-btn" title="Toggle UI Sound Effects" aria-label="Toggle Sound">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle-btn" class="action-icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Quick Resume Modal Trigger -->
+        <button class="btn btn-secondary btn-sm open-resume-btn" style="display:none; @media(min-width:640px){display:inline-flex;}">
+          <span>CV</span>
+        </button>
+
+        <!-- Let's Talk CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Let's Talk</span>
+          <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Hamburger -->
+        <div class="mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. Hero Section
+         ====================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Introduction & Value Proposition -->
+          <div class="hero-content reveal">
+            <!-- Pulsing Availability Badge -->
+            <div class="status-badge">
+              <span class="status-indicator"></span>
+              <span>Available for Freelance &amp; Full-time Roles</span>
+            </div>
+
+            <div class="hero-greeting">👋 Hello World, I am</div>
+            <h1 class="hero-title">
+              Samiullah <span class="gradient-text">Zulfqar</span>
+            </h1>
+
+            <!-- Animated Typing Subtitle -->
+            <div class="hero-typing-wrap">
+              <span class="typing-prefix">I am a&nbsp;</span>
+              <span class="typing-target">Web &amp; Mobile Developer</span>
+            </div>
+
+            <p class="hero-bio">
+              Passionate <strong>Web &amp; Mobile App Developer</strong> dedicated to engineering high-performance, intuitive digital experiences. Proficient across the entire stack — from crafting fluid cross-platform mobile apps with <strong>Flutter</strong> &amp; <strong>React Native</strong> to architecting scalable, modern web applications with <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <span>Explore Projects</span>
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary btn-lg">
+                <span>Hire Me</span>
+              </a>
+
+              <button class="btn btn-outline btn-lg open-resume-btn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>View CV</span>
+              </button>
+            </div>
+
+            <!-- Social Media & Profile Links -->
+            <div class="hero-socials">
+              <span>Connect:</span>
+              <div class="social-icons-row">
+                <!-- GitHub -->
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" class="social-pill" title="Chat on WhatsApp">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </a>
+
+                <!-- Direct Email -->
+                <a href="mailto:samiullahzulfqar980@gmail.com" class="social-pill" title="Email Samiullah">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Portrait Showcase with Floating Badges -->
+          <div class="hero-visual reveal-right">
+            <div class="hero-glow-blob"></div>
+
+            <!-- Stylized Image Card with Photo -->
+            <div class="hero-image-card tilt-card">
+              <div class="hero-img-wrapper">
+                <img src="assets/images/samiullah-hero.jpeg" alt="Samiullah Zulfqar - Web and Mobile App Developer" loading="eager">
+              </div>
+            </div>
+
+            <!-- Floating Glass Badge 1: Experience -->
+            <div class="floating-badge fb-1">
+              <div class="badge-icon">⚡</div>
+              <div class="badge-info">
+                <h4>3+ Years</h4>
+                <p>Industry Experience</p>
+              </div>
+            </div>
+
+            <!-- Floating Glass Badge 2: Projects -->
+            <div class="floating-badge fb-2">
+              <div class="badge-icon">🚀</div>
+              <div class="badge-info">
+                <h4>25+ Shipped</h4>
+                <p>Web &amp; Mobile Apps</p>
+              </div>
+            </div>
+
+            <!-- Floating Glass Badge 3: Dual Specialty -->
+            <div class="floating-badge fb-3">
+              <div class="badge-icon">📱</div>
+              <div class="badge-info">
+                <h4>Cross-Platform</h4>
+                <p>Flutter &amp; React Native</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Key Stats / Numbers Counter
+         ====================================================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-card-grid">
+          
+          <div class="stat-card reveal">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="25">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Satisfied Global Clients</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="99.8">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Code Quality &amp; Uptime</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. About Me & Interactive Terminal CLI
+         ====================================================================== -->
+    <section id="about">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>💡 About Me</span>
+          </div>
+          <h2 class="section-title">Driven by Passion, Built on Code</h2>
+          <p class="section-subtitle">
+            Bridging the gap between sleek front-end aesthetics, 60fps mobile fluid performance, and robust cloud infrastructure.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left: Profile Spec Card -->
+          <div class="about-profile-card tilt-card reveal-left">
+            <div class="about-image-frame">
+              <img src="assets/images/samiullah-avatar.jpeg" alt="Samiullah Profile" loading="lazy">
+            </div>
+            
+            <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:0.25rem;">Samiullah Zulfqar</h3>
+            <p style="color:var(--accent-primary);font-weight:600;font-size:0.95rem;margin-bottom:1rem;">Web &amp; Mobile App Engineer</p>
+
+            <div class="about-quick-specs">
+              <div class="spec-item">
+                <span class="spec-label">📍 Location:</span>
+                <span class="spec-value">Islamabad, Pakistan</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">🎓 Degree:</span>
+                <span class="spec-value">BS Computer Science</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">🌐 Languages:</span>
+                <span class="spec-value">English, Urdu</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">⚡ Focus:</span>
+                <span class="spec-value highlight">Web &amp; Mobile Apps</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">🟢 Status:</span>
+                <span class="spec-value" style="color:#10b981;">Available Immediately</span>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem;display:flex;gap:0.75rem;">
+              <button class="btn btn-primary btn-sm open-resume-btn" style="flex:1;">View Resume</button>
+              <a href="#contact" class="btn btn-secondary btn-sm" style="flex:1;">Message Me</a>
+            </div>
+          </div>
+
+          <!-- Right: Detailed Narrative & Features -->
+          <div class="about-narrative reveal-right">
+            <h3>Turning complex engineering challenges into fluid user interfaces.</h3>
+            
+            <p>
+              I am a dedicated software engineer specializing in both <strong>modern web ecosystems</strong> and <strong>cross-platform mobile application development</strong>. Over the last 3+ years, I have created scalable web platforms, high-throughput backend APIs, and slick mobile apps published on the App Store and Google Play.
+            </p>
+
+            <p>
+              Whether structuring modular state management in <strong>Flutter &amp; React Native</strong> or engineering fast, SEO-optimized user experiences with <strong>Next.js &amp; Tailwind CSS</strong>, I obsess over code quality, responsiveness, and micro-interactions that delight users.
+            </p>
+
+            <div class="about-features-grid">
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                  <h4>60 FPS Mobile Performance</h4>
+                  <p>Smooth native gestures, offline-first SQLite sync, and minimal battery overhead.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                  <h4>Modern Full-Stack Web</h4>
+                  <p>Next.js 14 App Router, Server Components, TypeScript, and clean REST/GraphQL APIs.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                  <h4>Pixel-Perfect UI/UX</h4>
+                  <p>Translating Figma designs into responsive, accessible code with smooth micro-animations.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                  <h4>Scalable Cloud &amp; DB</h4>
+                  <p>PostgreSQL, MongoDB, Firebase, Docker, and seamless CI/CD store deployments.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Terminal / CLI Widget -->
+            <div class="terminal-window">
+              <div class="terminal-titlebar">
+                <div class="terminal-dots">
+                  <span class="t-dot red"></span>
+                  <span class="t-dot yellow"></span>
+                  <span class="t-dot green"></span>
+                </div>
+                <div class="terminal-title">samiullah@dev-box:~ (zsh)</div>
+                <div style="width:30px;"></div>
+              </div>
+              <div class="terminal-body">
+                <div id="terminal-output">
+                  <p style="color:#64748b;">// Welcome to Samiullah's Interactive CLI!</p>
+                  <p style="color:#64748b;">// Type a command below or click a quick suggestion.</p>
+                </div>
+                <div class="terminal-input-row">
+                  <span class="terminal-prompt">visitor@samiullah-dev:~$</span>
+                  <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help', 'skills', or 'projects'..." autocomplete="off" spellcheck="false">
+                </div>
+              </div>
+              <div class="terminal-chips">
+                <span class="terminal-chip" data-cmd="help">help</span>
+                <span class="terminal-chip" data-cmd="skills">skills</span>
+                <span class="terminal-chip" data-cmd="projects">projects</span>
+                <span class="terminal-chip" data-cmd="experience">experience</span>
+                <span class="terminal-chip" data-cmd="contact">contact</span>
+                <span class="terminal-chip" data-cmd="clear">clear</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Services / Capabilities
+         ====================================================================== -->
+    <section id="services" style="background:var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>🛠 What I Deliver</span>
+          </div>
+          <h2 class="section-title">Specialized Services &amp; Solutions</h2>
+          <p class="section-subtitle">
+            From initial wireframe and architecture to high-performance web deployment and store launches.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1: Mobile App Development -->
+          <div class="service-card tilt-card reveal">
+            <div class="service-icon-wrap cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Cross-Platform Mobile Apps</h3>
+            <p class="service-description">
+              Engineering fluid iOS and Android mobile apps using Flutter and React Native. Built with 60fps smooth animations, native device API integration, and offline-first storage.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Flutter &amp; React Native / Expo</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Offline SQLite / Hive &amp; Push Notifications</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Biometric Auth &amp; Bluetooth IoT integrations</span>
+              </li>
+            </ul>
+            <div class="service-tags">
+              <span class="service-tag">Flutter</span>
+              <span class="service-tag">React Native</span>
+              <span class="service-tag">iOS</span>
+              <span class="service-tag">Android</span>
+            </div>
+          </div>
+
+          <!-- Service 2: Modern Web Development -->
+          <div class="service-card tilt-card reveal">
+            <div class="service-icon-wrap indigo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Full-Stack Web Applications</h3>
+            <p class="service-description">
+              Developing lightning-fast, reactive web applications and SaaS platforms with React, Next.js, and TypeScript. Optimized for SEO, Core Web Vitals, and exceptional responsiveness.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Next.js 14 App Router &amp; Server Components</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>TypeScript, Tailwind CSS &amp; Modern State</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% Lighthouse Performance &amp; Accessibility</span>
+              </li>
+            </ul>
+            <div class="service-tags">
+              <span class="service-tag">React</span>
+              <span class="service-tag">Next.js</span>
+              <span class="service-tag">TypeScript</span>
+              <span class="service-tag">Tailwind</span>
+            </div>
+          </div>
+
+          <!-- Service 3: Backend & API Architecture -->
+          <div class="service-card tilt-card reveal">
+            <div class="service-icon-wrap purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Backend &amp; API Architecture</h3>
+            <p class="service-description">
+              Designing robust, high-throughput RESTful and GraphQL APIs with Node.js, Express, and Python. Implementing rock-solid JWT authentication, WebSockets, and payment gateways.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Node.js, Express &amp; FastAPI Backends</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stripe, PayPal &amp; OAuth2 Authentication</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Real-Time WebSockets &amp; Event Streams</span>
+              </li>
+            </ul>
+            <div class="service-tags">
+              <span class="service-tag">Node.js</span>
+              <span class="service-tag">Express</span>
+              <span class="service-tag">REST APIs</span>
+              <span class="service-tag">WebSockets</span>
+            </div>
+          </div>
+
+          <!-- Service 4: UI/UX to Pixel-Perfect Code -->
+          <div class="service-card tilt-card reveal">
+            <div class="service-icon-wrap emerald">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">UI/UX Design to Code</h3>
+            <p class="service-description">
+              Converting Figma and Adobe XD prototypes into clean, responsive, and component-driven production code with interactive animations, dark/light themes, and glassmorphism.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Figma to React &amp; Flutter Codebases</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Micro-interactions &amp; CSS Keyframe Motion</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Adaptive layouts for Mobile, Tablet &amp; Desktop</span>
+              </li>
+            </ul>
+            <div class="service-tags">
+              <span class="service-tag">Figma</span>
+              <span class="service-tag">UI/UX</span>
+              <span class="service-tag">Design Systems</span>
+              <span class="service-tag">Animations</span>
+            </div>
+          </div>
+
+          <!-- Service 5: Database & Cloud Engineering -->
+          <div class="service-card tilt-card reveal">
+            <div class="service-icon-wrap amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Database &amp; Cloud Systems</h3>
+            <p class="service-description">
+              Architecting secure, scalable databases with PostgreSQL, MongoDB, Firebase, and Supabase. Optimized query indexes, caching layers with Redis, and automated backups.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>PostgreSQL, Prisma ORM &amp; Supabase</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Firebase Firestore &amp; Realtime Sync</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Redis Caching &amp; High-Availability Sharding</span>
+              </li>
+            </ul>
+            <div class="service-tags">
+              <span class="service-tag">PostgreSQL</span>
+              <span class="service-tag">MongoDB</span>
+              <span class="service-tag">Firebase</span>
+              <span class="service-tag">Supabase</span>
+            </div>
+          </div>
+
+          <!-- Service 6: Store Deployment & Maintenance -->
+          <div class="service-card tilt-card reveal">
+            <div class="service-icon-wrap rose">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                <line x1="4" y1="22" x2="4" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">App Store Deployment &amp; CI/CD</h3>
+            <p class="service-description">
+              Complete release management for the Apple App Store and Google Play Store. Configuring automated CI/CD pipelines, app signing, compliance audits, and post-launch updates.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Apple App Store &amp; Google Play Console</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>GitHub Actions &amp; Fastlane CI/CD</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Crashlytics &amp; Real-Time Analytics Monitoring</span>
+              </li>
+            </ul>
+            <div class="service-tags">
+              <span class="service-tag">App Store</span>
+              <span class="service-tag">Google Play</span>
+              <span class="service-tag">CI/CD</span>
+              <span class="service-tag">Docker</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Skills & Tech Stack Section
+         ====================================================================== -->
+    <section id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>⚡ Arsenal</span>
+          </div>
+          <h2 class="section-title">Technical Skills &amp; Stack</h2>
+          <p class="section-subtitle">
+            A comprehensive overview of the modern programming languages, libraries, and tools I use daily.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="filter-tabs reveal">
+          <button class="filter-tab skill-filter-tab active" data-skill-category="all">All Tech</button>
+          <button class="filter-tab skill-filter-tab" data-skill-category="mobile">Mobile Development</button>
+          <button class="filter-tab skill-filter-tab" data-skill-category="frontend">Frontend Web</button>
+          <button class="filter-tab skill-filter-tab" data-skill-category="backend">Backend &amp; DB</button>
+          <button class="filter-tab skill-filter-tab" data-skill-category="tools">Tools &amp; DevOps</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          
+          <!-- Skill: Flutter -->
+          <div class="skill-card tilt-card reveal" data-category="mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#02569B">
+                  <path d="M14.314 0L2.3 12 6 15.7 21.684 0h-7.37zM6.02 15.672L12 21.65l3.685-3.685-5.98-5.978L6.02 15.672zM15.685 17.965L19.37 21.65h-7.37l3.685-3.685z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">94%</span>
+            </div>
+            <div class="skill-info">
+              <h4>Flutter</h4>
+              <p>Dart, BloC, Provider, Native Channels</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 94%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: React Native -->
+          <div class="skill-card tilt-card reveal" data-category="mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#61DAFB">
+                  <ellipse cx="12" cy="12" rx="4" ry="11" transform="rotate(30 12 12)" fill="none" stroke="#61DAFB" stroke-width="1.8"/>
+                  <ellipse cx="12" cy="12" rx="4" ry="11" transform="rotate(90 12 12)" fill="none" stroke="#61DAFB" stroke-width="1.8"/>
+                  <ellipse cx="12" cy="12" rx="4" ry="11" transform="rotate(150 12 12)" fill="none" stroke="#61DAFB" stroke-width="1.8"/>
+                  <circle cx="12" cy="12" r="2" fill="#61DAFB"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">92%</span>
+            </div>
+            <div class="skill-info">
+              <h4>React Native</h4>
+              <p>Expo, Gesture Handler, Redux, Native Bridges</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: React.js -->
+          <div class="skill-card tilt-card reveal" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#00D8FF">
+                  <circle cx="12" cy="12" r="2.5" fill="#00D8FF"/>
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="#00D8FF" stroke-width="1.5"/>
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)" fill="none" stroke="#00D8FF" stroke-width="1.5"/>
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(120 12 12)" fill="none" stroke="#00D8FF" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">96%</span>
+            </div>
+            <div class="skill-info">
+              <h4>React.js</h4>
+              <p>Hooks, Context, Zustand, TanStack Query</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 96%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Next.js -->
+          <div class="skill-card tilt-card reveal" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.669 17.513l-6.938-9.014H9v7.197H7.426V8.125h2.479l7.009 9.155a10.02 10.02 0 0 1-1.245.233zM15.352 8.125h1.574v5.321h-1.574V8.125z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">90%</span>
+            </div>
+            <div class="skill-info">
+              <h4>Next.js 14</h4>
+              <p>App Router, SSR, SSG, Server Actions</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: TypeScript -->
+          <div class="skill-card tilt-card reveal" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#3178C6">
+                  <rect width="24" height="24" rx="4" fill="#3178C6"/>
+                  <path d="M11.5 8h-6v2h1.9v8h2.2v-8h1.9V8zm4 3.5c-.7 0-1.4.3-1.8.8l1.3 1.1c.2-.3.5-.5.8-.5.4 0 .7.2.7.5 0 .3-.2.4-.6.6l-1 .4c-1.1.4-1.7 1.2-1.7 2.1 0 1.4 1 2.3 2.5 2.3 1.1 0 2-.5 2.5-1.3l-1.3-1.1c-.3.4-.7.6-1.1.6-.5 0-.8-.3-.8-.6 0-.3.2-.5.7-.7l.9-.4c1.2-.5 1.8-1.2 1.8-2.2 0-1.4-1.1-2.2-2.4-2.2z" fill="#fff"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">88%</span>
+            </div>
+            <div class="skill-info">
+              <h4>TypeScript</h4>
+              <p>Type safety, Generics, Interfaces, Strict Lint</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript ES6+ -->
+          <div class="skill-card tilt-card reveal" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#F7DF1E">
+                  <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+                  <path d="M6 16.5l2-1.2c.4.7.8 1.2 1.5 1.2.8 0 1.3-.4 1.3-1.4v-6.3h2.3v6.3c0 2.2-1.3 3.3-3.4 3.3-1.7 0-2.8-.9-3.7-2.1zm8.3-.4l2-1.2c.5.8 1.2 1.4 2.2 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.7-1.1-1.8-1.6l-.6-.3c-1.8-.8-3-1.8-3-3.8 0-1.9 1.5-3.4 3.7-3.4 1.6 0 2.8.6 3.6 2.1l-1.9 1.2c-.4-.7-.9-1-1.7-1-.8 0-1.4.5-1.4 1.1 0 .7.5 1 1.6 1.5l.6.3c2.1.9 3.3 1.9 3.3 4 0 2.3-1.8 3.6-4.1 3.6-2.3 0-3.7-1.1-4.5-2.7z" fill="#000"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">95%</span>
+            </div>
+            <div class="skill-info">
+              <h4>JavaScript (ES6+)</h4>
+              <p>Async/Await, Closures, DOM, Canvas API</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Tailwind CSS -->
+          <div class="skill-card tilt-card reveal" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#06B6D4">
+                  <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.336 6.182 14.975 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.336 13.382 8.975 12 6.001 12z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">96%</span>
+            </div>
+            <div class="skill-info">
+              <h4>Tailwind CSS</h4>
+              <p>Responsive design, Dark mode, Custom plugins</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 96%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Node.js -->
+          <div class="skill-card tilt-card reveal" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#339933">
+                  <path d="M12 2l10 5.77v11.55L12 25.1 2 19.32V7.77L12 2zm0 2.31L4 8.92v9.23l8 4.62 8-4.62V8.92L12 4.31z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">90%</span>
+            </div>
+            <div class="skill-info">
+              <h4>Node.js &amp; Express</h4>
+              <p>REST APIs, JWT Auth, Microservices, Middleware</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Firebase -->
+          <div class="skill-card tilt-card reveal" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#FFCA28">
+                  <path d="M3.89 15.672L6.255.49a.747.747 0 0 1 1.41-.143l2.872 5.46-6.647 9.865zm16.896 2.766L18.42 5.34a.75.75 0 0 0-1.39-.187L3.195 19.868l7.986 4.502a2.008 2.008 0 0 0 1.942 0l7.663-4.43zM12.9 8.27l1.966-3.824a.75.75 0 0 1 1.345.03l4.575 14.004L12.9 8.27z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">94%</span>
+            </div>
+            <div class="skill-info">
+              <h4>Firebase &amp; Firestore</h4>
+              <p>Auth, Realtime DB, Cloud Messaging, Storage</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 94%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: PostgreSQL -->
+          <div class="skill-card tilt-card reveal" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#4169E1">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">86%</span>
+            </div>
+            <div class="skill-info">
+              <h4>PostgreSQL &amp; Prisma</h4>
+              <p>Relational modeling, Indexing, Transactions</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: MongoDB -->
+          <div class="skill-card tilt-card reveal" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#47A248">
+                  <path d="M12 0s-6 5.5-6 12 6 12 6 12 6-5.5 6-12-6-12-6-12zm.7 19.3v-5.2c1.4.3 2.5 1.4 2.5 2.8 0 1.2-.8 2.2-2.5 2.4z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">88%</span>
+            </div>
+            <div class="skill-info">
+              <h4>MongoDB &amp; Mongoose</h4>
+              <p>Document pipelines, Aggregations, Atlas Cloud</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card tilt-card reveal" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="#F05032">
+                  <path d="M23.546 10.93L13.067.452a1.603 1.603 0 0 0-2.268 0L8.68 2.571l3.327 3.325a1.897 1.897 0 0 1 2.394 2.417l3.208 3.208a1.895 1.895 0 1 1-1.134 1.127l-2.99-2.99a1.893 1.893 0 0 1-2.036-.454 1.897 1.897 0 0 1-.462-2.046L7.69 3.86.452 11.098a1.603 1.603 0 0 0 0 2.268l10.48 10.48c.626.626 1.642.626 2.268 0l10.346-10.348a1.603 1.603 0 0 0 0-2.568z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">95%</span>
+            </div>
+            <div class="skill-info">
+              <h4>Git &amp; GitHub</h4>
+              <p>Branching, Pull Requests, Rebase, Actions CI</p>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. Featured Projects Portfolio
+         ====================================================================== -->
+    <section id="projects" style="background:var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>🚀 Featured Work</span>
+          </div>
+          <h2 class="section-title">Showcase Projects</h2>
+          <p class="section-subtitle">
+            Explore a curated selection of production-grade web applications and cross-platform mobile apps.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs reveal">
+          <button class="filter-tab project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-tab project-filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-tab project-filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-tab project-filter-btn" data-filter="fullstack">Full-Stack SaaS</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: FinPulse -->
+          <div class="project-card tilt-card reveal" data-category="mobile fullstack">
+            <div class="project-thumb-wrap">
+              <span class="project-category-badge">Mobile • Flutter</span>
+              <img src="assets/images/projects/finpulse.svg" alt="FinPulse Crypto App" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm quick-view-btn" data-project="finpulse">
+                  <span>Quick View</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FinPulse - Crypto &amp; Fintech Wallet</h3>
+              <p class="project-description">
+                A sleek multi-chain digital wallet with real-time WebSocket market feeds, biometric authorization, and Stripe card deposits.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Dart</span>
+                <span class="tech-pill">Firebase</span>
+                <span class="tech-pill">Stripe</span>
+                <span class="tech-pill">WebSockets</span>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn quick-view-btn" data-project="finpulse">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: DevFlow -->
+          <div class="project-card tilt-card reveal" data-category="web fullstack">
+            <div class="project-thumb-wrap">
+              <span class="project-category-badge">Web • Next.js 14</span>
+              <img src="assets/images/projects/devflow.svg" alt="DevFlow SaaS Platform" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm quick-view-btn" data-project="devflow">
+                  <span>Quick View</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">DevFlow - Developer Community SaaS</h3>
+              <p class="project-description">
+                Interactive cloud platform for engineers to collaborate on code, search 10k+ snippets, and track pull request activities live.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Next.js 14</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Tailwind</span>
+                <span class="tech-pill">Prisma</span>
+                <span class="tech-pill">PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn quick-view-btn" data-project="devflow">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: FoodExpress -->
+          <div class="project-card tilt-card reveal" data-category="mobile">
+            <div class="project-thumb-wrap">
+              <span class="project-category-badge">Mobile • React Native</span>
+              <img src="assets/images/projects/foodexpress.svg" alt="FoodExpress App" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm quick-view-btn" data-project="foodexpress">
+                  <span>Quick View</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FoodExpress - On-Demand Delivery</h3>
+              <p class="project-description">
+                Cross-platform food delivery app with live turn-by-turn rider GPS tracking, restaurant menus, and instant push notifications.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">React Native</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Google Maps</span>
+                <span class="tech-pill">Socket.io</span>
+                <span class="tech-pill">MongoDB</span>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn quick-view-btn" data-project="foodexpress">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Aura 3D -->
+          <div class="project-card tilt-card reveal" data-category="web">
+            <div class="project-thumb-wrap">
+              <span class="project-category-badge">Web • Three.js</span>
+              <img src="assets/images/projects/aura3d.svg" alt="Aura 3D Store" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm quick-view-btn" data-project="aura3d">
+                  <span>Quick View</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aura 3D - Interactive Storefront</h3>
+              <p class="project-description">
+                3D WebGL product customizer and sneaker storefront with real-time studio lighting, metallic shaders, and dynamic cart checkout.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Three.js</span>
+                <span class="tech-pill">WebGL</span>
+                <span class="tech-pill">Tailwind</span>
+                <span class="tech-pill">Stripe</span>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn quick-view-btn" data-project="aura3d">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: HealthSync -->
+          <div class="project-card tilt-card reveal" data-category="mobile fullstack">
+            <div class="project-thumb-wrap">
+              <span class="project-category-badge">Cross-Platform • Flutter</span>
+              <img src="assets/images/projects/healthsync.svg" alt="HealthSync Telehealth" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm quick-view-btn" data-project="healthsync">
+                  <span>Quick View</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">HealthSync - Telehealth &amp; AI Vitals</h3>
+              <p class="project-description">
+                HIPAA-ready telemedicine platform with WebRTC encrypted video consults, continuous Bluetooth ECG telemetry, and e-prescriptions.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Python FastAPI</span>
+                <span class="tech-pill">WebRTC</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">IoT Vitals</span>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn quick-view-btn" data-project="healthsync">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: TaskMaster Pro -->
+          <div class="project-card tilt-card reveal" data-category="web fullstack">
+            <div class="project-thumb-wrap">
+              <span class="project-category-badge">Web • React &amp; AI</span>
+              <img src="assets/images/projects/taskmaster.svg" alt="TaskMaster Pro" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm quick-view-btn" data-project="taskmaster">
+                  <span>Quick View</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">TaskMaster Pro - AI Kanban Suite</h3>
+              <p class="project-description">
+                Productivity workspace with smooth drag-and-drop Kanban boards, sprint estimation, and automated AI standup summaries.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Zustand</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">dnd-kit</span>
+              </div>
+              <div class="project-actions">
+                <button class="project-link-btn quick-view-btn" data-project="taskmaster">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. Career Experience & Education Timeline
+         ====================================================================== -->
+    <section id="experience">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>💼 Milestones</span>
+          </div>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">
+            A track record of shipping production software, mentoring engineers, and mastering emerging stacks.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          
+          <!-- Milestone 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-period">2024 — Present</span>
+              <h3 class="timeline-role">Lead Mobile &amp; Web Developer</h3>
+              <div class="timeline-company">TechNova Innovations</div>
+              <p class="timeline-description">
+                Directing the development of multi-platform mobile applications in Flutter and enterprise React/Next.js client portals. Architected real-time WebSocket state management reducing app latency by 42%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-period">2023 — 2024</span>
+              <h3 class="timeline-role">Full-Stack Developer</h3>
+              <div class="timeline-company">Digital Craft Labs</div>
+              <p class="timeline-description">
+                Developed responsive web applications and REST APIs using Next.js, Node.js, and PostgreSQL. Created automated end-to-end testing suites and integrated Stripe payment pipelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-period">2022 — 2023</span>
+              <h3 class="timeline-role">Mobile App Developer (Flutter / React Native)</h3>
+              <div class="timeline-company">AppForge Solutions</div>
+              <p class="timeline-description">
+                Built and maintained cross-platform mobile apps for local startups. Configured Firebase authentication, push notifications, and native Android/iOS camera and geolocation services.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 4: Education -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-period">2020 — 2024</span>
+              <h3 class="timeline-role">Bachelor of Science in Computer Science</h3>
+              <div class="timeline-company">Department of Computing &amp; IT</div>
+              <p class="timeline-description">
+                Comprehensive academic background in Data Structures &amp; Algorithms, Mobile Computing, Object-Oriented Software Design, Database Systems, and Network Architecture.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. Client Testimonials & Recommendations
+         ====================================================================== -->
+    <section id="testimonials" style="background:var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>⭐ Testimonials</span>
+          </div>
+          <h2 class="section-title">Client Satisfaction</h2>
+          <p class="section-subtitle">
+            What founders and product managers have to say about working with Samiullah.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card tilt-card reveal">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p class="testimonial-quote">
+              "Samiullah developed our Flutter mobile app from scratch. His attention to smooth animations, clean architecture, and responsive handling on both Android and iOS exceeded our highest expectations."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">MR</div>
+              <div class="author-info">
+                <h4>Marcus Reynolds</h4>
+                <p>CTO, FinPulse Ltd (London, UK)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card tilt-card reveal">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p class="testimonial-quote">
+              "Working with Samiullah on our Next.js web application was fantastic. He delivers clean, well-commented TypeScript code ahead of deadlines and communicates proactively at every stage."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#06b6d4,#3b82f6);">EL</div>
+              <div class="author-info">
+                <h4>Elena Lin</h4>
+                <p>Product Lead, DevFlow Hub (San Francisco, USA)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card tilt-card reveal">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p class="testimonial-quote">
+              "Rarely do you find a developer who truly excels at both web and mobile engineering with equal mastery. Samiullah is reliable, skilled, and produces truly modern UI/UX."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#059669);">TK</div>
+              <div class="author-info">
+                <h4>Tariq Khan</h4>
+                <p>Founder, Aura Group (Dubai, UAE)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. Interactive Contact Section
+         ====================================================================== -->
+    <section id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span>📬 Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="section-subtitle">
+            Have a project in mind, need a mobile app built, or seeking a full-time software developer? Send me a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Column -->
+          <div class="contact-info-panel reveal-left">
+            <div class="contact-card-box tilt-card">
+              <h3>Direct Contact &amp; Availability</h3>
+              <p>
+                I am currently open to new client commissions, contract work, and full-time remote engineering positions worldwide.
+              </p>
+
+              <div class="contact-methods">
+                <!-- Method 1: Email -->
+                <div class="contact-method-item">
+                  <div class="method-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-label">Email Address</div>
+                    <div class="method-value">samiullahzulfqar980@gmail.com</div>
+                  </div>
+                  <button class="copy-btn" data-copy="samiullahzulfqar980@gmail.com" title="Copy to clipboard">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <!-- Method 2: Location -->
+                <div class="contact-method-item">
+                  <div class="method-icon-wrap" style="color:#06b6d4;background:rgba(6,182,212,0.15);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-label">Location</div>
+                    <div class="method-value">Islamabad, Pakistan (UTC+5)</div>
+                  </div>
+                </div>
+
+                <!-- Method 3: GitHub -->
+                <div class="contact-method-item">
+                  <div class="method-icon-wrap" style="color:#10b981;background:rgba(16,185,129,0.15);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-label">GitHub</div>
+                    <div class="method-value">samiullahzulfqar980-cmd</div>
+                  </div>
+                  <a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    Visit
+                  </a>
+                </div>
+
+                <!-- Method 4: WhatsApp Direct -->
+                <div class="contact-method-item">
+                  <div class="method-icon-wrap" style="color:#22c55e;background:rgba(34,197,94,0.15);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-label">Instant Chat</div>
+                    <div class="method-value">WhatsApp Chat</div>
+                  </div>
+                  <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    Chat
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-card tilt-card reveal-right">
+            <h3 style="font-size:1.6rem;font-weight:800;margin-bottom:0.5rem;">Send a Message</h3>
+            <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:1.75rem;">
+              Fill in your details below and I will respond to your inquiry within 24 hours.
+            </p>
+
+            <form id="contact-form">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="contact-service" class="form-label">Service Interested In</label>
+                  <select id="contact-service" class="form-select">
+                    <option value="mobile-app">Cross-Platform Mobile App (Flutter / React Native)</option>
+                    <option value="web-app">Full-Stack Web App (React / Next.js)</option>
+                    <option value="both">Both Web &amp; Mobile App Development</option>
+                    <option value="backend">Backend &amp; API Architecture</option>
+                    <option value="consulting">Technical Consultation / Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-budget" class="form-label">Estimated Budget</label>
+                  <select id="contact-budget" class="form-select">
+                    <option value="1k-3k">$1,000 — $3,000</option>
+                    <option value="3k-5k">$3,000 — $5,000</option>
+                    <option value="5k+">$5,000+</option>
+                    <option value="fulltime">Full-time / Monthly Salary</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Details or Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Describe your project goals, timelines, or role requirements..." required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-lg" style="width:100%;">
+                <span>Send Message</span>
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-status" class="form-status-msg"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       11. Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-badge">&lt;SZ/&gt;</div>
+            <div class="logo-text">Samiullah<span>.dev</span></div>
+          </a>
+          <p>
+            Full-Stack Web &amp; Mobile App Developer passionate about crafting modern, robust, and accessible digital products.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#skills" class="footer-link">Tech Stack</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Expertise</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Flutter Development</a></li>
+            <li><a href="#services" class="footer-link">React Native Apps</a></li>
+            <li><a href="#services" class="footer-link">Next.js Web Applications</a></li>
+            <li><a href="#services" class="footer-link">REST &amp; GraphQL APIs</a></li>
+            <li><a href="#services" class="footer-link">Store Deployment</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Connect -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links-list">
+            <li><a href="mailto:samiullahzulfqar980@gmail.com" class="footer-link">samiullahzulfqar980@gmail.com</a></li>
+            <li><span class="footer-link" style="cursor:default;">Islamabad, Pakistan</span></li>
+            <li><a href="https://github.com/samiullahzulfqar980-cmd" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
+            <li><a href="#contact" class="footer-link">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Samiullah Zulfqar. All rights reserved.
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <span>Crafted with</span>
+          <span style="color:#ef4444;">❤️</span>
+          <span>&amp; Modern Web Standards</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       12. Floating Back to Top Button
+       ======================================================================== -->
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ========================================================================
+       13. Project Quick-View Modal
+       ======================================================================== -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+          <p id="modal-project-category" style="color:var(--accent-primary);font-size:0.85rem;font-weight:600;margin-top:0.2rem;">Category</p>
+        </div>
+        <button id="close-project-modal" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="border-radius:14px;overflow:hidden;margin-bottom:1.5rem;background:#090d16;border:1px solid var(--border-color);">
+          <img id="modal-project-img" src="" alt="Project Preview" style="width:100%;height:auto;max-height:360px;object-fit:cover;">
+        </div>
+
+        <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Overview</h4>
+        <p id="modal-project-summary" style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin-bottom:1.5rem;"></p>
+
+        <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">The Engineering Challenge</h4>
+        <p id="modal-project-challenge" style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin-bottom:1.5rem;"></p>
+
+        <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Technical Solution</h4>
+        <p id="modal-project-solution" style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin-bottom:1.5rem;"></p>
+
+        <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Key Features</h4>
+        <ul id="modal-project-features" style="list-style:none;margin-bottom:1.5rem;"></ul>
+
+        <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Tech Stack Used</h4>
+        <div id="modal-project-tech" style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:2rem;"></div>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex:1;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary" onclick="document.getElementById('project-modal').classList.remove('active');document.body.style.overflow='';" style="flex:1;">
+            <span>Inquire About Similar Project</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       14. Resume / CV Viewer Modal
+       ======================================================================== -->
+  <div id="resume-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width:850px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Samiullah Zulfqar - Professional Resume</h3>
+          <p style="color:var(--text-secondary);font-size:0.85rem;">Web &amp; Mobile App Developer</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <button id="print-resume-btn" class="btn btn-secondary btn-sm" title="Print or Save as PDF">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / PDF</span>
+          </button>
+          <button id="close-resume-modal" class="modal-close-btn" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="resume-sheet">
+          <h1>Samiullah Zulfqar</h1>
+          <h2>Full-Stack Web &amp; Cross-Platform Mobile App Developer</h2>
+          <p style="color:#64748b;font-size:0.875rem;margin-bottom:1.5rem;">
+            📍 Islamabad, Pakistan • 📧 samiullahzulfqar980@gmail.com • 🐙 github.com/samiullahzulfqar980-cmd
+          </p>
+
+          <div class="resume-section-title">Professional Summary</div>
+          <p>
+            Results-oriented Full-Stack Web and Mobile App Developer with 3+ years of experience engineering high-performance web applications and fluid cross-platform mobile apps for iOS and Android. Specialized in React, Next.js, Flutter, React Native, TypeScript, Node.js, and cloud database architectures.
+          </p>
+
+          <div class="resume-section-title">Technical Expertise</div>
+          <ul style="padding-left:1.25rem;margin-bottom:1rem;">
+            <li><strong>Mobile:</strong> Flutter, Dart, React Native, Expo, SQLite, Android Studio, Xcode, BloC/Provider, Push Notifications.</li>
+            <li><strong>Frontend Web:</strong> React.js, Next.js 14, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Zustand, Redux.</li>
+            <li><strong>Backend &amp; DB:</strong> Node.js, Express, Python FastAPI, PostgreSQL, MongoDB, Prisma ORM, Firebase, Supabase, Redis.</li>
+            <li><strong>DevOps &amp; Tools:</strong> Git, GitHub, Docker, Postman, WebRTC, Stripe API, Figma, Vercel, Google Play Console.</li>
+          </ul>
+
+          <div class="resume-section-title">Work Experience</div>
+          
+          <div style="margin-bottom:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="font-size:1rem;color:#0f172a;">Lead Mobile &amp; Web Developer</strong>
+              <span style="font-size:0.85rem;color:#64748b;font-weight:600;">2024 — Present</span>
+            </div>
+            <div style="color:#4f46e5;font-size:0.9rem;font-weight:600;margin-bottom:0.35rem;">TechNova Innovations — Islamabad</div>
+            <p>
+              • Spearhead development of cross-platform Flutter and React Native mobile apps with 99.8% crash-free sessions.<br>
+              • Architected Next.js 14 web client portals, optimizing Time-to-Interactive (TTI) by 45%.<br>
+              • Integrated real-time WebSockets and automated push notifications for over 40,000 active users.
+            </p>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="font-size:1rem;color:#0f172a;">Full-Stack Web Developer</strong>
+              <span style="font-size:0.85rem;color:#64748b;font-weight:600;">2023 — 2024</span>
+            </div>
+            <div style="color:#4f46e5;font-size:0.9rem;font-weight:600;margin-bottom:0.35rem;">Digital Craft Labs</div>
+            <p>
+              • Built high-traffic web applications using React, Tailwind CSS, Node.js, and PostgreSQL.<br>
+              • Implemented secure Stripe checkout pipelines and JWT-based authentication mechanisms.
+            </p>
+          </div>
+
+          <div class="resume-section-title">Education</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <strong style="font-size:1rem;color:#0f172a;">Bachelor of Science in Computer Science (BSCS)</strong>
+            <span style="font-size:0.85rem;color:#64748b;font-weight:600;">2020 — 2024</span>
+          </div>
+          <p style="color:#64748b;font-size:0.875rem;">Top Computing Faculty • Focus: Mobile Software Architecture &amp; Web Engineering</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

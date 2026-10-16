@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="df-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="df-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="df-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#df-bg)" rx="16"/>
+
+  <!-- Main IDE & SaaS Window -->
+  <g transform="translate(40, 35)" filter="url(#df-shadow)">
+    <rect x="0" y="0" width="720" height="430" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    
+    <!-- Titlebar -->
+    <rect x="0" y="0" width="720" height="42" rx="14" fill="#1e293b"/>
+    <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="65" cy="21" r="6" fill="#10b981"/>
+    <text x="120" y="26" fill="#cbd5e1" font-family="monospace" font-size="12" font-weight="bold">DevFlow - Community &amp; Workflow Cloud</text>
+    
+    <!-- Window tabs -->
+    <rect x="420" y="8" width="130" height="26" rx="6" fill="#0f172a"/>
+    <text x="440" y="25" fill="#38bdf8" font-family="monospace" font-size="11">App.tsx</text>
+    <rect x="560" y="8" width="130" height="26" rx="6" fill="#1e293b"/>
+    <text x="580" y="25" fill="#94a3b8" font-family="monospace" font-size="11">schema.prisma</text>
+
+    <!-- Left Sidebar -->
+    <rect x="0" y="42" width="180" height="388" fill="#0a0f1d"/>
+    <text x="20" y="70" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="bold" letter-spacing="1">PROJECT EXPLORER</text>
+    <text x="25" y="98" fill="#94a3b8" font-family="monospace" font-size="11">📁 src</text>
+    <text x="35" y="122" fill="#38bdf8" font-family="monospace" font-size="11">↳ ⚛ components</text>
+    <text x="45" y="144" fill="#cbd5e1" font-family="monospace" font-size="11">  • Header.tsx</text>
+    <text x="45" y="166" fill="#38bdf8" font-family="monospace" font-size="11">  • KanBan.tsx</text>
+    <text x="45" y="188" fill="#cbd5e1" font-family="monospace" font-size="11">  • UserFeed.tsx</text>
+    <text x="35" y="214" fill="#94a3b8" font-family="monospace" font-size="11">↳ 🚀 app/api</text>
+    <text x="45" y="236" fill="#cbd5e1" font-family="monospace" font-size="11">  • route.ts</text>
+    <text x="25" y="264" fill="#94a3b8" font-family="monospace" font-size="11">📁 prisma</text>
+    <text x="25" y="290" fill="#94a3b8" font-family="monospace" font-size="11">📁 public</text>
+
+    <!-- Branch Status -->
+    <rect x="15" y="330" width="150" height="70" rx="8" fill="#131d2e" stroke="#1e293b"/>
+    <text x="25" y="352" fill="#38bdf8" font-family="monospace" font-size="10">⚡ Git: main</text>
+    <text x="25" y="370" fill="#10b981" font-family="monospace" font-size="10">✓ All tests passing</text>
+    <text x="25" y="388" fill="#94a3b8" font-family="monospace" font-size="10">Build: 0.8s (Next 14)</text>
+
+    <!-- Code Editor View (Middle) -->
+    <g transform="translate(195, 55)">
+      <text x="10" y="25" fill="#f43f5e" font-family="monospace" font-size="12">import</text>
+      <text x="65" y="25" fill="#cbd5e1" font-family="monospace" font-size="12">{ useState, useEffect }</text>
+      <text x="240" y="25" fill="#f43f5e" font-family="monospace" font-size="12">from</text>
+      <text x="280" y="25" fill="#a7f3d0" font-family="monospace" font-size="12">'react';</text>
+
+      <text x="10" y="50" fill="#f43f5e" font-family="monospace" font-size="12">export default function</text>
+      <text x="190" y="50" fill="#60a5fa" font-family="monospace" font-size="12">DevFlowHub() {</text>
+
+      <text x="30" y="75" fill="#94a3b8" font-family="monospace" font-size="12">// Real-time WebSocket connection to developer cloud</text>
+      
+      <text x="30" y="100" fill="#f43f5e" font-family="monospace" font-size="12">const</text>
+      <text x="75" y="100" fill="#cbd5e1" font-family="monospace" font-size="12">[collaborators, setCollab] = </text>
+      <text x="310" y="100" fill="#38bdf8" font-family="monospace" font-size="12">useState([]);</text>
+
+      <text x="30" y="125" fill="#f43f5e" font-family="monospace" font-size="12">return (</text>
+      <text x="45" y="150" fill="#38bdf8" font-family="monospace" font-size="12">&lt;<tspan fill="#f59e0b">div</tspan> <tspan fill="#a7f3d0">className=</tspan><tspan fill="#cbd5e1">"grid grid-cols-3 gap-6"</tspan>&gt;</text>
+      <text x="60" y="175" fill="#38bdf8" font-family="monospace" font-size="12">&lt;<tspan fill="#60a5fa">CodeSyncEngine</tspan> <tspan fill="#a7f3d0">latency=</tspan><tspan fill="#cbd5e1">"12ms"</tspan> /&gt;</text>
+      <text x="60" y="200" fill="#38bdf8" font-family="monospace" font-size="12">&lt;<tspan fill="#60a5fa">CommunityFeed</tspan> <tspan fill="#a7f3d0">verifiedUsers=</tspan><tspan fill="#f59e0b">{true}</tspan> /&gt;</text>
+      <text x="45" y="225" fill="#38bdf8" font-family="monospace" font-size="12">&lt;/<tspan fill="#f59e0b">div</tspan>&gt;</text>
+      <text x="10" y="250" fill="#60a5fa" font-family="monospace" font-size="12">}</text>
+    </g>
+
+    <!-- Right Live Preview Card -->
+    <g transform="translate(530, 60)">
+      <rect x="0" y="0" width="170" height="340" rx="10" fill="#131d2e" stroke="#1e293b"/>
+      <text x="15" y="25" fill="#cbd5e1" font-family="sans-serif" font-size="11" font-weight="bold">Live App Preview</text>
+      <rect x="15" y="40" width="140" height="75" rx="8" fill="url(#df-accent)"/>
+      <text x="25" y="65" fill="#fff" font-family="sans-serif" font-size="11" font-weight="bold">DevFlow 2.0</text>
+      <text x="25" y="82" fill="#e0f2fe" font-family="sans-serif" font-size="9">Connect 500+ Devs</text>
+      <rect x="25" y="92" width="70" height="16" rx="4" fill="#ffffff" opacity="0.9"/>
+      <text x="60" y="103" fill="#0284c7" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">JOIN NOW</text>
+
+      <!-- Mini feed -->
+      <rect x="15" y="130" width="140" height="45" rx="6" fill="#1e293b"/>
+      <circle cx="30" cy="152" r="8" fill="#38bdf8"/>
+      <text x="45" y="148" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold">Alex M. pushed</text>
+      <text x="45" y="160" fill="#94a3b8" font-family="sans-serif" font-size="8">fix: oauth token flow</text>
+
+      <rect x="15" y="185" width="140" height="45" rx="6" fill="#1e293b"/>
+      <circle cx="30" cy="207" r="8" fill="#a855f7"/>
+      <text x="45" y="203" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold">Sarah K. merged</text>
+      <text x="45" y="215" fill="#94a3b8" font-family="sans-serif" font-size="8">feat: dark theme mode</text>
+
+      <rect x="15" y="240" width="140" height="85" rx="6" fill="#1e293b"/>
+      <text x="25" y="260" fill="#34d399" font-family="sans-serif" font-size="9" font-weight="bold">● System All Green</text>
+      <text x="25" y="278" fill="#94a3b8" font-family="sans-serif" font-size="8">Next.js 14 App Router</text>
+      <text x="25" y="293" fill="#94a3b8" font-family="sans-serif" font-size="8">Tailwind CSS + shadcn</text>
+      <text x="25" y="308" fill="#94a3b8" font-family="sans-serif" font-size="8">PostgreSQL &amp; Prisma</text>
+    </g>
+  </g>
+</svg>
