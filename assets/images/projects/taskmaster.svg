@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="tm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#tm-bg)" rx="16"/>
+
+  <!-- Top App Navigation -->
+  <g transform="translate(40, 30)">
+    <text x="0" y="25" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold">TaskMaster <tspan fill="#818cf8">Pro AI</tspan></text>
+    <rect x="200" y="5" width="220" height="28" rx="8" fill="#1e293b"/>
+    <text x="215" y="23" fill="#64748b" font-family="sans-serif" font-size="10">🔍 Search tasks, sprints, epics...</text>
+
+    <!-- Avatars -->
+    <circle cx="640" cy="19" r="13" fill="#3b82f6"/>
+    <circle cx="660" cy="19" r="13" fill="#ec4899"/>
+    <circle cx="680" cy="19" r="13" fill="#10b981"/>
+    <rect x="700" y="6" width="60" height="26" rx="6" fill="#6366f1"/>
+    <text x="730" y="23" fill="#fff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">+ Task</text>
+  </g>
+
+  <!-- Kanban Board Columns -->
+  <!-- Column 1: Backlog -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="220" height="380" rx="12" fill="#111827" stroke="#1f2937"/>
+    <text x="15" y="30" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">TO DO • 3</text>
+
+    <rect x="12" y="45" width="196" height="95" rx="8" fill="#1f2937"/>
+    <rect x="22" y="57" width="55" height="18" rx="4" fill="#3730a3"/>
+    <text x="49" y="70" fill="#c7d2fe" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">DATABASE</text>
+    <text x="22" y="94" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Migrate Redis cache cluster</text>
+    <text x="22" y="112" fill="#64748b" font-family="sans-serif" font-size="9">Est: 2h • High Priority</text>
+    <circle cx="190" cy="120" r="8" fill="#f59e0b"/>
+
+    <rect x="12" y="150" width="196" height="95" rx="8" fill="#1f2937"/>
+    <rect x="22" y="162" width="65" height="18" rx="4" fill="#065f46"/>
+    <text x="54" y="175" fill="#a7f3d0" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">FRONTEND</text>
+    <text x="22" y="199" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Add micro-animations to modal</text>
+    <text x="22" y="217" fill="#64748b" font-family="sans-serif" font-size="9">Framer Motion • 1.5h</text>
+    <circle cx="190" cy="225" r="8" fill="#3b82f6"/>
+  </g>
+
+  <!-- Column 2: In Progress -->
+  <g transform="translate(290, 80)">
+    <rect x="0" y="0" width="220" height="380" rx="12" fill="#111827" stroke="#312e81" stroke-width="1.5"/>
+    <text x="15" y="30" fill="#818cf8" font-family="sans-serif" font-size="11" font-weight="bold">IN PROGRESS • 2</text>
+
+    <rect x="12" y="45" width="196" height="115" rx="8" fill="#1e293b" stroke="#6366f1" stroke-width="1"/>
+    <rect x="22" y="57" width="50" height="18" rx="4" fill="#831843"/>
+    <text x="47" y="70" fill="#fbcfe8" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">MOBILE</text>
+    <text x="22" y="94" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Flutter Offline SQLite Sync</text>
+    <text x="22" y="112" fill="#94a3b8" font-family="sans-serif" font-size="9">Handling background re-connects</text>
+    <rect x="22" y="125" width="150" height="6" rx="3" fill="#334155"/>
+    <rect x="22" y="125" width="110" height="6" rx="3" fill="#6366f1"/>
+    <text x="22" y="145" fill="#818cf8" font-family="sans-serif" font-size="8">75% Completed</text>
+    <circle cx="190" cy="140" r="8" fill="#10b981"/>
+
+    <rect x="12" y="170" width="196" height="100" rx="8" fill="#1f2937"/>
+    <rect x="22" y="182" width="60" height="18" rx="4" fill="#78350f"/>
+    <text x="52" y="195" fill="#fef3c7" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">SECURITY</text>
+    <text x="22" y="219" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Biometric OAuth2 MFA</text>
+    <text x="22" y="237" fill="#64748b" font-family="sans-serif" font-size="9">FaceID / TouchID API hooks</text>
+    <circle cx="190" cy="245" r="8" fill="#ec4899"/>
+  </g>
+
+  <!-- Column 3: Completed / Deployed -->
+  <g transform="translate(540, 80)">
+    <rect x="0" y="0" width="220" height="380" rx="12" fill="#111827" stroke="#1f2937"/>
+    <text x="15" y="30" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold">COMPLETED • 5</text>
+
+    <rect x="12" y="45" width="196" height="95" rx="8" fill="#132a1e" stroke="#059669" stroke-width="1"/>
+    <rect x="22" y="57" width="55" height="18" rx="4" fill="#047857"/>
+    <text x="49" y="70" fill="#a7f3d0" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">DEVOPS</text>
+    <text x="22" y="94" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Docker Multi-stage CI/CD</text>
+    <text x="22" y="112" fill="#34d399" font-family="sans-serif" font-size="9">✓ Deployed to Kubernetes</text>
+    <circle cx="190" cy="120" r="8" fill="#10b981"/>
+
+    <rect x="12" y="150" width="196" height="95" rx="8" fill="#132a1e"/>
+    <rect x="22" y="162" width="60" height="18" rx="4" fill="#047857"/>
+    <text x="52" y="175" fill="#a7f3d0" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">PAYMENT</text>
+    <text x="22" y="199" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Stripe Webhooks &amp; Invoices</text>
+    <text x="22" y="217" fill="#34d399" font-family="sans-serif" font-size="9">✓ Automated recurring billing</text>
+    <circle cx="190" cy="225" r="8" fill="#3b82f6"/>
+  </g>
+</svg>

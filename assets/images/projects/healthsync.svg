@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="hs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#021c15"/>
+    </linearGradient>
+    <linearGradient id="hs-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#hs-bg)" rx="16"/>
+
+  <!-- Left: Telehealth Video Call Mockup -->
+  <g transform="translate(60, 40)">
+    <rect x="0" y="0" width="280" height="420" rx="20" fill="#064e3b" stroke="#047857" stroke-width="2"/>
+    <!-- Video Feed Area -->
+    <rect x="10" y="10" width="260" height="270" rx="14" fill="#042f24"/>
+    <circle cx="140" cy="110" r="45" fill="#065f46"/>
+    <text x="140" y="118" fill="#a7f3d0" font-family="sans-serif" font-size="28" text-anchor="middle">👨‍⚕️</text>
+    
+    <rect x="25" y="25" width="90" height="24" rx="12" fill="#064e3b" opacity="0.8"/>
+    <circle cx="37" cy="37" r="4" fill="#ef4444"/>
+    <text x="47" y="41" fill="#fff" font-family="sans-serif" font-size="9">LIVE 18:42</text>
+
+    <!-- Doctor Details Tag -->
+    <rect x="25" y="215" width="230" height="50" rx="10" fill="#022c22" opacity="0.9"/>
+    <text x="35" y="235" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Dr. Zainab Tariq, MD</text>
+    <text x="35" y="252" fill="#34d399" font-family="sans-serif" font-size="10">Consultant Cardiologist • WebRTC HD</text>
+
+    <!-- Patient self mini preview -->
+    <rect x="195" y="25" width="60" height="75" rx="8" fill="#134e4a" stroke="#2dd4bf" stroke-width="1.5"/>
+    <text x="225" y="68" fill="#99f6e4" font-family="sans-serif" font-size="16" text-anchor="middle">🧑</text>
+
+    <!-- Call Controls -->
+    <g transform="translate(25, 300)">
+      <circle cx="35" cy="25" r="20" fill="#065f46"/>
+      <text x="35" y="29" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">🎤</text>
+
+      <circle cx="85" cy="25" r="20" fill="#065f46"/>
+      <text x="85" y="29" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">📹</text>
+
+      <circle cx="135" cy="25" r="20" fill="#065f46"/>
+      <text x="135" y="29" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">💬</text>
+
+      <circle cx="195" cy="25" r="22" fill="#dc2626"/>
+      <text x="195" y="30" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">📞</text>
+    </g>
+
+    <!-- Vitals status strip -->
+    <rect x="15" y="365" width="250" height="40" rx="8" fill="#022c22"/>
+    <text x="30" y="388" fill="#6ee7b7" font-family="sans-serif" font-size="10">Syncing with Apple Watch / WearOS</text>
+    <circle cx="240" cy="385" r="5" fill="#10b981"/>
+  </g>
+
+  <!-- Right: Patient Vitals & Health Records Dashboard -->
+  <g transform="translate(370, 40)">
+    <rect x="0" y="0" width="370" height="420" rx="16" fill="#042f24" stroke="#065f46" stroke-width="1.5"/>
+    
+    <text x="25" y="35" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">HealthSync Patient Telemetry</text>
+    <text x="25" y="52" fill="#6ee7b7" font-family="sans-serif" font-size="10">Real-time IoT Bluetooth &amp; FHIR integration</text>
+
+    <!-- Vitals Grid -->
+    <rect x="25" y="70" width="150" height="80" rx="10" fill="#064e3b"/>
+    <text x="38" y="92" fill="#a7f3d0" font-family="sans-serif" font-size="10">Heart Rate</text>
+    <text x="38" y="120" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">72 <tspan font-size="11" fill="#6ee7b7">BPM</tspan></text>
+    <text x="38" y="138" fill="#34d399" font-family="sans-serif" font-size="9">♥ Normal Rhythm</text>
+
+    <rect x="195" y="70" width="150" height="80" rx="10" fill="#064e3b"/>
+    <text x="208" y="92" fill="#a7f3d0" font-family="sans-serif" font-size="10">Blood Oxygen (SpO2)</text>
+    <text x="208" y="120" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">98.5 <tspan font-size="11" fill="#6ee7b7">%</tspan></text>
+    <text x="208" y="138" fill="#34d399" font-family="sans-serif" font-size="9">● Optimal Range</text>
+
+    <!-- ECG Graph -->
+    <rect x="25" y="165" width="320" height="110" rx="10" fill="#022c22" stroke="#065f46"/>
+    <text x="38" y="188" fill="#a7f3d0" font-family="sans-serif" font-size="10" font-weight="bold">Continuous ECG Lead-II Waveform</text>
+    
+    <path d="M 35 230 L 70 230 L 80 230 L 85 210 L 90 255 L 95 190 L 100 240 L 105 230 L 140 230 L 150 230 L 155 210 L 160 255 L 165 190 L 170 240 L 175 230 L 210 230 L 220 230 L 225 210 L 230 255 L 235 190 L 240 240 L 245 230 L 330 230" 
+          fill="none" stroke="#34d399" stroke-width="2.5"/>
+
+    <!-- Prescriptions and AI notes -->
+    <rect x="25" y="290" width="320" height="110" rx="10" fill="#064e3b"/>
+    <text x="40" y="315" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">AI Medical Summary &amp; E-Prescription</text>
+    <text x="40" y="335" fill="#a7f3d0" font-family="sans-serif" font-size="9">✓ Blood pressure stable (118/76 mmHg)</text>
+    <text x="40" y="352" fill="#a7f3d0" font-family="sans-serif" font-size="9">✓ Digital Rx sent to D-Watson Pharmacy</text>
+    <text x="40" y="370" fill="#a7f3d0" font-family="sans-serif" font-size="9">✓ Next automated follow-up scheduled for Friday</text>
+  </g>
+</svg>
