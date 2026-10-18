@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyButtons();
   initSoundEffects();
   initBackToTop();
+  initProgressiveWebApp();
 });
 
 /* ==========================================================================
@@ -959,7 +960,44 @@ function initSoundEffects() {
 }
 
 /* ==========================================================================
-   17. Back to Top Floating Button
+   18. Installable Portfolio App (PWA)
+   ========================================================================== */
+function initProgressiveWebApp() {
+  if ('serviceWorker' in navigator && window.isSecureContext) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').catch((error) => {
+        console.warn('Portfolio offline support could not be registered:', error);
+      });
+    });
+  }
+
+  const installButton = document.getElementById('install-app-btn');
+  if (!installButton) return;
+
+  let installPrompt = null;
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    installPrompt = event;
+    installButton.hidden = false;
+  });
+
+  installButton.addEventListener('click', async () => {
+    if (!installPrompt) return;
+    installPrompt.prompt();
+    await installPrompt.userChoice;
+    installPrompt = null;
+    installButton.hidden = true;
+  });
+
+  window.addEventListener('appinstalled', () => {
+    installPrompt = null;
+    installButton.hidden = true;
+    showToast('Samiullah portfolio app installed!');
+  });
+}
+
+/* ==========================================================================
+   19. Back to Top Floating Button
    ========================================================================== */
 function initBackToTop() {
   const backToTopBtn = document.querySelector('.back-to-top');

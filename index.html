@@ -12,6 +12,12 @@
   <meta name="keywords" content="Samiullah, Samiullah Zulfqar, Web Developer, Mobile App Developer, Flutter Developer, React Developer, Full Stack Developer, Lahore, Pakistan">
   <meta name="author" content="Samiullah">
   <meta name="theme-color" content="#090d16">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Samiullah">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/images/app-icon-192.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -93,6 +99,9 @@
         <button class="btn btn-secondary btn-sm open-resume-btn" style="display:none; @media(min-width:640px){display:inline-flex;}">
           <span>CV</span>
         </button>
+
+        <!-- Installable app action, shown when the browser supports installation -->
+        <button id="install-app-btn" class="btn btn-secondary btn-sm" type="button" hidden>Install app</button>
 
         <!-- Let's Talk CTA -->
         <a href="#contact" class="btn btn-primary btn-sm">

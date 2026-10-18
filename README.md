@@ -1,10 +1,13 @@
 # Samiullah Zulfqar — Web & Mobile App Developer Portfolio
 
-A modern, high-performance, and animated portfolio website for **Samiullah Zulfqar**, a Full-Stack Web and Cross-Platform Mobile App Developer.
+A modern, responsive portfolio and installable Progressive Web App (PWA) for **Samiullah**, a web and Flutter mobile app developer.
 
 ![Samiullah Portfolio Preview](assets/images/samiullah-avatar.jpeg)
 
 ## 🌟 Highlights & Features
+
+- **Installable PWA**: Add the portfolio to your Android, iPhone, or desktop home screen; the app shell and key portfolio assets are cached for offline viewing.
+- **App-like experience**: Standalone display mode, branded app icons, and an in-browser install prompt where supported.
 
 - **High-Tech Aesthetic**: Deep midnight dark theme with glowing neon gradients, glassmorphism cards (`backdrop-filter: blur`), and a clean Light Mode switch.
 - **Interactive Animations**:
@@ -54,7 +57,14 @@ python3 -m http.server 3000
 npx serve .
 ```
 
-Visit `http://localhost:3000` to view the website.
+Visit `http://localhost:3000` to view the website. Use `localhost` or HTTPS to enable service workers and PWA installation.
+
+### Install it like an app
+
+- **Android / desktop Chrome or Edge:** Open the site and choose **Install app** when the browser offers it (or use the browser menu’s install option).
+- **iPhone / iPad:** Open the site in Safari, tap **Share**, then **Add to Home Screen**.
+
+The first visit downloads the app shell and selected portfolio assets so the site can open offline afterward.
 
 ---
 
