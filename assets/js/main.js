@@ -982,11 +982,29 @@ function initProgressiveWebApp() {
   });
 
   installButton.addEventListener('click', async () => {
-    if (!installPrompt) return;
-    installPrompt.prompt();
-    await installPrompt.userChoice;
+    if (!installPrompt) {
+      showToast('To install, open your browser menu and choose “Install app” or “Add to Home Screen”.');
+      return;
+    }
+
+    const promptEvent = installPrompt;
     installPrompt = null;
-    installButton.hidden = true;
+    installButton.disabled = true;
+
+    try {
+      await promptEvent.prompt();
+      const { outcome } = await promptEvent.userChoice;
+      if (outcome === 'accepted') {
+        installButton.hidden = true;
+      } else {
+        showToast('Installation was dismissed. You can install later from the browser menu.');
+      }
+    } catch (error) {
+      console.warn('The browser could not open the install prompt:', error);
+      showToast('Use the browser menu and choose “Install app” to add this portfolio.');
+    } finally {
+      installButton.disabled = false;
+    }
   });
 
   window.addEventListener('appinstalled', () => {
