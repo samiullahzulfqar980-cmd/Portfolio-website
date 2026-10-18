@@ -830,58 +830,23 @@ function escapeHTML(str) {
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const statusMsg = document.getElementById('form-status');
-  const submitBtn = document.getElementById('form-submit-btn');
-
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     const name = document.getElementById('contact-name').value.trim();
     const email = document.getElementById('contact-email').value.trim();
+    const service = document.getElementById('contact-service')?.selectedOptions[0]?.text || '';
     const message = document.getElementById('contact-message').value.trim();
+    if (!name || !email || !message) return;
 
-    if (!name || !email || !message) {
-      if (statusMsg) {
-        statusMsg.className = 'form-status-msg error';
-        statusMsg.textContent = 'Please fill out all required fields.';
-      }
-      return;
+    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterested in: ${service}\n\n${message}`);
+    if (statusMsg) {
+      statusMsg.className = 'form-status-msg success';
+      statusMsg.textContent = 'Your email app is opening with your message. If it does not open, email samiullahzulfqar980@gmail.com directly.';
     }
-
-    // Validate email pattern
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      if (statusMsg) {
-        statusMsg.className = 'form-status-msg error';
-        statusMsg.textContent = 'Please enter a valid email address.';
-      }
-      return;
-    }
-
-    // Button loading state
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = `
-      <svg style="animation:spin 1s linear infinite;width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-        <circle cx="12" cy="12" r="10" stroke-width="4" stroke="currentColor" stroke-opacity="0.25"></circle>
-        <path d="M12 2 A10 10 0 0 1 22 12" stroke-width="4" stroke="currentColor"></path>
-      </svg>
-      Sending message...
-    `;
-    submitBtn.disabled = true;
-
-    // Simulate reliable dispatch
-    setTimeout(() => {
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-      form.reset();
-
-      if (statusMsg) {
-        statusMsg.className = 'form-status-msg success';
-        statusMsg.textContent = `Thank you, ${name}! Your message has been received. Samiullah will respond within 24 hours.`;
-      }
-      showToast('Message sent successfully! 🚀');
-    }, 1200);
+    window.location.href = `mailto:samiullahzulfqar980@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 
