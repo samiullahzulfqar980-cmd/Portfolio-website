@@ -7,7 +7,7 @@ A modern, responsive portfolio and installable Progressive Web App (PWA) for **S
 ## 🌟 Highlights & Features
 
 - **Installable PWA**: Add the portfolio to your Android, iPhone, or desktop home screen; the app shell and key portfolio assets are cached for offline viewing.
-- **App-like experience**: Standalone display mode, branded app icons, and an in-browser install prompt where supported.
+- **App-like experience**: Standalone display mode, branded app icons, and standard installation through the browser menu.
 
 - **High-Tech Aesthetic**: Deep midnight dark theme with glowing neon gradients, glassmorphism cards (`backdrop-filter: blur`), and a clean Light Mode switch.
 - **Interactive Animations**:
@@ -61,7 +61,7 @@ Visit `http://localhost:3000` to view the website. Use `localhost` or HTTPS to e
 
 ### Install it like an app
 
-- **Android / desktop Chrome or Edge:** Open the site and choose **Install app** when the browser offers it (or use the browser menu’s install option).
+- **Android / desktop Chrome or Edge:** Open the browser menu and choose **Install app** or **Install this site as an app**.
 - **iPhone / iPad:** Open the site in Safari, tap **Share**, then **Add to Home Screen**.
 
 The first visit downloads the app shell and selected portfolio assets so the site can open offline afterward.
